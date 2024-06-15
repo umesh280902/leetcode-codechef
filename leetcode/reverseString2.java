@@ -25,7 +25,7 @@
 // s consists of only lowercase English letters.
 // 1 <= k <= 104
 
-public class Solution {
+public class reverseString2 {
     public String reverseStr(String s, int k) {
         char[] arr = s.toCharArray();
         int n = arr.length;
