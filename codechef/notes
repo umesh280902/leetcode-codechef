@@ -2,3 +2,21 @@ data structures
 
 HashSet
 LinkedHashSet = hashSet+Doubly LinkedList
+
+To find duplicate
+use HashSet and if contatins add that in the array and return it 
+
+Binary Search
+steps 
+int mid = (first + last)/2;  
+while( first <= last ){  
+   if ( arr[mid] < key ){  
+     first = mid + 1;     
+   }else if ( arr[mid] == key ){  
+     System.out.println("Element is found at index: " + mid);  
+     break;  
+   }else{  
+      last = mid - 1;  
+   }  
+   mid = (first + last)/2;  
+}  
