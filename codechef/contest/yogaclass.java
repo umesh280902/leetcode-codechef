@@ -128,7 +128,7 @@
 // =
 // 14
 // 1⋅2+2⋅6=14 rupees.
-    import java.util.*;
+import java.util.*;
 import java.lang.*;
 import java.io.*;
 
@@ -138,17 +138,21 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-	    int testCases=sc.nextInt();
-	    while(testCases-->0){
-	        int a=sc.nextInt();
-	        int b=sc.nextInt();
-	        int c=sc.nextInt();
-	        if(a%2==0){
-	            System.out.println(Math.max((a*b),(a/2*c)));
-	        }else{
-	            System.out.println((int)(a-1)*c*0.5+1*b);
-	        }
-	    }
+		int T=sc.nextInt();
+		while(T-- >0){
+		    int N=sc.nextInt();
+		    int X=sc.nextInt();
+		    int Y=sc.nextInt();
+		    
+		    int type2Session=N/2;
+		    int type1Session=N%2;
+		    
+		    int maxAmountOption1=type2Session*Y+type1Session*X;
+		    int maxAmountOption2 = N * X;
+		    int maxAmount=Math.max(maxAmountOption1,maxAmountOption2);
+		    System.out.println(maxAmount);
+		    
+		} 
 
 	}
 }
